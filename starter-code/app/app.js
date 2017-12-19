@@ -16,6 +16,7 @@ $(function() {
     
     // - Put all form info in variable newBook
     $("form").on("submit", function(event){
+        event.preventDefault();
     	let newBook = {
     		title: $('#book-title').val(),
     		author: $('#book-author').val(),
@@ -25,7 +26,7 @@ $(function() {
     	console.log(newBook);
 
     	// - Post newBook to den-super-crud
-	    $.post('https://den-super-crud.herokuapp.com/books', newBook)
+	    $.post('https://den-super-crud.herokuapp.com/books', newBook)//;
 	      .done(function(data) {
 	      console.log(data);
 		});
