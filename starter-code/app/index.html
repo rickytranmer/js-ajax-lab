@@ -11,10 +11,10 @@
     <body>
       <h1>Booktastic Booktacular</h1>
       <form id="new-book">
-        <input type="text" name="book[title]" id="book-title" placeholder="book's title">
-        <input type="text" name="book[author]" id="book-author" placeholder="book's author">
-        <input type="text" name="book[image]" id="book-image" placeholder="book's image URL">
-        <input type="text" name="book[releaseDate]" id="book-release-date" placeholder="book's release date">
+        <input type="text" name="book[title]" id="book-title" placeholder="book's title" required>
+        <input type="text" name="book[author]" id="book-author" placeholder="book's author" required>
+        <input type="text" name="book[image]" id="book-image" placeholder="book's image URL" required>
+        <input type="text" name="book[releaseDate]" id="book-release-date" placeholder="book's release date" required>
         <input type="submit" value='Save My Book'>
       </form>
       <ul id="books">
